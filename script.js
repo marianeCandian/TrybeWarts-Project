@@ -20,3 +20,13 @@ function habilitar() {
 }
 
 checkBox.addEventListener('change', habilitar);
+
+function limitTextArea(valor) {
+  const quant = 500;
+  const total = valor.length;
+  if (total <= quant) {
+    const resto = quant - total;
+    document.getElementById('counter').innerHTML = resto;
+  }
+}
+

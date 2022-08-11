@@ -87,8 +87,10 @@
         <input type="radio" id="dez" value="10" name="rate">
         <label for="dez">10</label>
       </label>
+     
       <label for="" class="textarea">Deixe seu comentário:
-        <textarea maxlength="500"></textarea>
+        <textarea maxlength="500" onkeyup="limitTextArea(this.value)" id="textarea"></textarea>
+        <span id="counter">500</span> Restantes <br>
       </label>
       <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?
         <input type="checkbox" id="agreement">
