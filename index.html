@@ -35,15 +35,15 @@
       <div class="sep">
         <label id="label-family">Qual sua família?</label>
            <div>
-            <input type="radio" name="family" value="Frontend" id="frontend">
+            <input type="radio" class="family" name="family" value="Frontend" id="frontend">
             <label for="frontend">Família Frontend</label>
            </div>
            <div>
-              <input type="radio" name="family" value="Backend" id="backend">
+              <input type="radio" class="family" name="family" value="Backend" id="backend">
               <label for="backend">Família Backend</label>
             </div>
             <div>
-              <input type="radio" name="family" value="FullStack"
+              <input type="radio" class="family" name="family" value="FullStack"
               id="fullstack">
               <label for="fullstack">Família FullStack</label>
             </div>
@@ -66,40 +66,39 @@
         <label for="Python">Python</label>
       </div>
       <label for="" id="label-rate">Como você avalia a Trybewarts?
-        <input type="radio" id="um" value="1" name="rate">
+        <input type="radio" class="rate" id="um" value="1" name="rate">
         <label for="um">1</label>
-        <input type="radio" id="dois" value="2" name="rate">
+        <input type="radio" class="rate" id="dois" value="2" name="rate">
         <label for="dois">2</label>
-        <input type="radio" id="três" value="3" name="rate">
+        <input type="radio" class="rate" id="três" value="3" name="rate">
         <label for="três">3</label>
-        <input type="radio" id="quatro" value="4" name="rate">
+        <input type="radio" class="rate" id="quatro" value="4" name="rate">
         <label for="quatro">4</label>
-        <input type="radio" id="cinco" value="5" name="rate">
+        <input type="radio" class="rate" id="cinco" value="5" name="rate">
         <label for="cinco">5</label>
-        <input type="radio" id="seis" value="6" name="rate">
+        <input type="radio" class="rate" id="seis" value="6" name="rate">
         <label for="seis">6</label>
-        <input type="radio" id="sete" value="7" name="rate">
+        <input type="radio" class="rate" id="sete" value="7" name="rate">
         <label for="sete">7</label>
-        <input type="radio" id="oito" value="8" name="rate">
+        <input type="radio" class="rate" id="oito" value="8" name="rate">
         <label for="oito">8</label>
-        <input type="radio" id="nove" value="9" name="rate">
+        <input type="radio" class="rate" id="nove" value="9" name="rate">
         <label for="nove">9</label>
-        <input type="radio" id="dez" value="10" name="rate">
+        <input type="radio" class="rate" id="dez" value="10" name="rate">
         <label for="dez">10</label>
       </label>
-      <label for="textarea" class="textarea">Deixe seu comentário:
+      <label for="" class="textarea">Deixe seu comentário:
         <textarea maxlength="500" id="textarea"></textarea>
-        <span id="counter">500</span> 
+        <span id="counter">500</span> Restantes <br>
       </label>
       <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?
         <input type="checkbox" id="agreement">
       </label>
       <button type="submit" id="submit-btn" disabled>Enviar</button>
     </form>
-    <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Trybewarts Colored">
     <form id="form-data">
-     
     </form>
+    <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Trybewarts Colored">
   </main>
   <footer>Direitos reservados à Trybewarts©</footer>
   <script src="script.js"></script>
