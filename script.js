@@ -21,14 +21,14 @@ function habilitar() {
 
 checkBox.addEventListener('change', habilitar);
 
-function limitTextArea(valor) {
-  const quant = 500;
-  const total = valor.length;
-  if (total <= quant) {
-    const resto = quant - total;
-    document.getElementById('counter').innerHTML = resto;
-  }
+function charCountUpdate(string) {
+  const strLength = string.target.maxLength - string.target.textLength;
+  const strCounter = document.getElementById('counter');
+  strCounter.innerHTML = strLength;
 }
+
+const textArea = document.getElementById('textarea');
+textArea.addEventListener('keyup', charCountUpdate);
 
 const nome = document.querySelector('#input-name');
 const sobrenome = document.querySelector('#input-lastname');
@@ -72,15 +72,15 @@ const pConteudo = document.createElement('p');
 const pAvaliacao = document.createElement('p');
 const pObservacoes = document.createElement('p');
 
-function addItemForms (e) {
+function addItemForms(e) {
   e.preventDefault();
-  pNomeSobrenome.innerText = 'Nome: ' + nome.value + sobrenome.value;
-  pEmail.innerText = 'Email: ' + email.value;
-  pCasa.innerText = 'Casa :' + getCasa();
-  pFamilia.innerText = 'Familia: ' + getFamilia();
-  pConteudo.innerText = 'Matérias: ' + getConteudo();
-  pAvaliacao.innerText = 'Avaliação: ' + getAvaliacao();
-  pObservacoes.innerText = 'Observações: ' + observacoes.value;
+  pNomeSobrenome.innerText = `Nome: ${nome.value} ${sobrenome.value}`;
+  pEmail.innerText = `Email: ${email.value}`;
+  pCasa.innerText = 'Casa :$getCasa()}';
+  pFamilia.innerText = `Familia: ${getFamilia()}`;
+  pConteudo.innerText = `Matérias: ${getConteudo()}`;
+  pAvaliacao.innerText = `Avaliação: ${getAvaliacao()}`;
+  pObservacoes.innerText = `Observações: ${observacoes.value}`;
   forms.appendChild(pNomeSobrenome);
   forms.appendChild(pEmail);
   forms.appendChild(pCasa);
